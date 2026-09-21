@@ -2,7 +2,21 @@
 
 Version 3 Log-MLP-HPO100 (2026-08-25).
 
+Repository: <https://github.com/masher-pp/flair-reproducibility-package>
+
 This package contains the data splits, source code, pretrained weights, trained five-fold main models, property-specific reliability model, and result tables associated with the FLAIR manuscript.
+
+## License status
+
+**No public reuse license has been selected by the copyright holders.**
+
+`LICENSE` states that no public reuse license has yet been chosen and that this
+distribution grants no permission to reuse, modify, or redistribute its contents
+beyond manuscript evaluation. `CITATION.cff` still carries placeholder authorship.
+The copyright holders must select explicit code and data licenses, and confirm that
+redistribution of every source dataset and pretrained weight is permitted, before
+this repository can be treated as openly licensed. See `LICENSE`, `CITATION.cff`,
+and `data/README.md`.
 
 ## Scientific scope
 

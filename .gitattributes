@@ -9,13 +9,9 @@
 # working-tree file, so the bytes must round-trip unchanged. LFS guarantees that.
 results/intermediate/calibration_features_ae_pre.csv filter=lfs diff=lfs merge=lfs -text
 
-# Normalize text line endings; keep binary types untouched.
-* text=auto
-*.py   text eol=lf
-*.md   text eol=lf
-*.txt  text eol=lf
-*.cff  text eol=lf
-*.json text eol=lf
-*.csv  text eol=lf
-*.yaml text eol=lf
-*.yml  text eol=lf
+# No global line-ending normalization is applied to this package on purpose.
+# The distributed `MANIFEST.sha256` lists SHA-256 digests of working-tree files; any
+# automatic CRLF conversion on checkout would change those bytes and break the
+# package's own integrity check. Declaring every text type as binary keeps checkout
+# byte-exact across platforms.
+*.sha256 -text

@@ -1,0 +1,2 @@
+﻿run_idx,train_csv,val_csv,test_csv,best_epoch,best_val_r2,train_solute_skipped_rows,train_solvent_skipped_rows,val_solute_skipped_rows,val_solvent_skipped_rows,test_solute_skipped_rows,test_solvent_skipped_rows,log_path,log_csv_path,best_path
+2,data/splits/train_fold_02.csv,data/splits/validation_fold_02.csv,data/splits/deployment_test.csv,241.0,0.8209235668182373,1.0,0.0,0.0,0.0,0.0,0.0,models/main_model/fold_02/training_log.npz,models/main_model/fold_02/training_log.csv,models/main_model/fold_02/best_model.pt

@@ -1,0 +1,11 @@
+query,rank,tanimoto,neighbor_smiles
+solute_1,1,0.8936,F[B-]1(F)n2c(-c3ccccc3)cc(-c3ccccc3)c2N=C2C(c3ccccc3)=CC(c3ccccc3)=[N+]21
+solute_1,2,0.8302,F[B-]1(F)n2c(-c3ccccc3)cc(-c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)c2N=C2C(c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)=CC(c3ccccc3)=[N+]21
+solute_1,3,0.8302,F[B-]1(F)n2c(-c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)cc(-c3ccccc3)c2N=C2C(c3ccccc3)=CC(c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)=[N+]21
+solute_1,4,0.7818,COc1ccc(C2=CC(c3ccccc3)=[N+]3C2=Nc2c(-c4ccc(OC)cc4)cc(-c4ccccc4)n2[B-]3(F)F)cc1
+solute_1,5,0.7818,CN(C)c1ccc(C2=CC(c3ccccc3)=[N+]3C2=Nc2c(-c4ccc(N(C)C)cc4)cc(-c4ccccc4)n2[B-]3(F)F)cc1
+solute_2,1,0.8936,F[B-]1(F)n2c(-c3ccccc3)cc(-c3ccccc3)c2N=C2C(c3ccccc3)=CC(c3ccccc3)=[N+]21
+solute_2,2,0.8302,F[B-]1(F)n2c(-c3ccccc3)cc(-c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)c2N=C2C(c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)=CC(c3ccccc3)=[N+]21
+solute_2,3,0.8302,F[B-]1(F)n2c(-c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)cc(-c3ccccc3)c2N=C2C(c3ccccc3)=CC(c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)=[N+]21
+solute_2,4,0.7818,COc1ccc(C2=CC(c3ccccc3)=[N+]3C2=Nc2c(-c4ccc(OC)cc4)cc(-c4ccccc4)n2[B-]3(F)F)cc1
+solute_2,5,0.7818,CN(C)c1ccc(C2=CC(c3ccccc3)=[N+]3C2=Nc2c(-c4ccc(N(C)C)cc4)cc(-c4ccccc4)n2[B-]3(F)F)cc1

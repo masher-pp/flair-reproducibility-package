@@ -1,0 +1,21 @@
+column,meaning,unit_or_encoding,notes
+abs,Absorption maximum,nm,Numeric target; missing values permitted
+emi,Emission maximum,nm,Numeric target; missing values permitted
+plqy,Photoluminescence quantum yield,fraction,Expected range 0 to 1
+em,Base-10 logarithm of molar extinction coefficient,log10(L mol-1 cm-1),Column name retained for compatibility with model code
+smiles,Solute molecular structure,SMILES,String
+solvent,Solvent molecular structure,SMILES,String
+reference(doi),Literature reference,DOI or source text,Provenance field
+source,Original data source,categorical,String
+tag,Source tag,categorical,Original dataset field
+tag_name,Human-readable source tag,categorical,Original dataset field
+solvent_num,Encoded solvent identifier,integer,Original dataset field
+_original_row_id,Stable source-row identifier,integer,Used to verify disjoint splits
+_canonical_smiles,Canonicalized solute structure,SMILES,Generated with RDKit
+_scaffold,Bemis-Murcko scaffold,SMILES,Generated with RDKit
+cv_fold,Fixed cross-validation fold,integer 1-5,Development rows only
+row_index,Stable reliability-sample identifier,integer,Joins held-out feature and label tables
+property,Target property,categorical,One of abs emi plqy em
+y_true,Observed property value,property-specific,Present only where labels are intentionally available
+base_prediction,Mean or fold-level main-model prediction,property-specific,See source table and model report
+predicted_ae,Predicted absolute error,property-specific,Reliability-model output

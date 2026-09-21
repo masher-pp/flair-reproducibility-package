@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite the associated FLAIR manuscript when using this package."
+title: "FLAIR reproducibility package"
+type: software
+version: "3.0.0"
+date-released: 2026-08-25
+authors:
+  - name: "Authors of the associated FLAIR manuscript"
+abstract: "Code, fixed data splits, trained models, and evaluation outputs for the FLAIR manuscript."

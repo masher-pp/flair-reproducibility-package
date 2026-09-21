@@ -1,0 +1,23 @@
+Validation commands (run from the package root):
+
+/opt/anaconda3/envs/Pytorch/bin/python3.10 src/data_splitting/check_generated_splits.py
+/opt/anaconda3/envs/Pytorch/bin/python3.10 scripts/01_train_main_model.py --check
+/opt/anaconda3/envs/Pytorch/bin/python3.10 scripts/02_extract_reliability_features.py --check
+/opt/anaconda3/envs/Pytorch/bin/python3.10 scripts/03_train_reliability_model.py --check
+/opt/anaconda3/envs/Pytorch/bin/python3.10 scripts/04_predict_single.py --check
+/opt/anaconda3/envs/Pytorch/bin/python3.10 src/reliability_model/log_mlp_reliability.py models/reliability_model/mlp_log_hpo100_reliability_model_bundle.pt
+/opt/anaconda3/envs/Pytorch/bin/python3.10 scripts/04_predict_single.py --smiles "CCO" --solvent "O" --json
+
+Authoritative v3 Reliability records:
+
+results/final/mlp_log_hpo100_20260824/validation.json
+results/final/mlp_log_hpo100_20260824/test15_by_property.csv
+results/hpo/mlp_log_hpo100_20260824/best_params.json
+models/reliability_model/mlp_log_hpo100_reliability_model_bundle.pt
+
+Expected model family: mlp_log_hpo100
+Expected selected trial: 65
+Expected feature count: 32
+Expected weighted validation Spearman: 0.6310563284911787
+Expected weighted Test15 Spearman: 0.6589980233120313
+Expected weighted Test15 AE MAE: 10.046811636040012

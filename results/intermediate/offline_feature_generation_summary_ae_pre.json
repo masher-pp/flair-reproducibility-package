@@ -1,0 +1,188 @@
+{
+  "version": "offline_ae_features_ae_pre_v4_sealed_test",
+  "calibration_features_csv": "./results/intermediate/calibration_features_ae_pre.csv",
+  "test_features_csv": "./results/intermediate/test_features_ae_pre.csv",
+  "test_labels_csv": "./results/intermediate/test_labels_ae_pre.csv",
+  "split": "ae",
+  "reference_csv": "./data/splits/deployment/deployment.csv",
+  "reuse_intermediate_cache": false,
+  "split_provenance": "generated_from_current_sources",
+  "split_strategy": "canonical_solute_solvent_group_random",
+  "current_test_csv": "./data/splits/deployment/deployment_test.csv",
+  "ae_pre_test_csv": "./data/source/ae_pre_holdout_candidate_pool.csv",
+  "current_test_signature": {
+    "path": "./data/splits/deployment/deployment_test.csv",
+    "size": 1641300,
+    "mtime_ns": 1784226683174093604,
+    "sha256": "7601acd613f6194f47da710f7253d16900a98a759b33d932b7c87d9370e8abbd"
+  },
+  "ae_pre_test_signature": {
+    "path": "./data/source/ae_pre_holdout_candidate_pool.csv",
+    "size": 1188165,
+    "mtime_ns": 1784226683077355504,
+    "sha256": "4b1508cc148c98d170fb6cefa39811a5f48ee52d3e7951441a37cedf50661534"
+  },
+  "train_and_val_signature": {
+    "path": "./data/splits/deployment/deployment.csv",
+    "size": 12006595,
+    "mtime_ns": 1785188704544930458,
+    "sha256": "61249769bc7dc8139891b73610dcd3bf348d021934f5a2c96979d0463927df07"
+  },
+  "merged_rows": 8659,
+  "dropped_rows_without_any_target": 19,
+  "dropped_rows_overlapping_train_and_val": 399,
+  "calibration_label": "calibration85",
+  "test_label": "test15",
+  "calibration_rows": 7345,
+  "test_rows": 1314,
+  "seed": 42,
+  "test_fraction": 0.15,
+  "canonical_pair_overlap": 0,
+  "train_and_val_canonical_pair_overlap": 0,
+  "unique_canonical_pairs": 8560,
+  "actual_test_fraction": 0.1517496246679755,
+  "source_group_counts": {
+    "current_test": 4949,
+    "ae_pre_test": 3710
+  },
+  "calibration_source_group_counts": {
+    "current_test": 4203,
+    "ae_pre_test": 3142
+  },
+  "test_source_group_counts": {
+    "current_test": 746,
+    "ae_pre_test": 568
+  },
+  "reused_existing_merged_split": false,
+  "folds": [
+    {
+      "fold": 1,
+      "checkpoint_path": "./models/main_model/fold_01/best_model.pt",
+      "sources": [
+        {
+          "split": "calibration",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_calibration85.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold1_calibration.csv",
+          "feature_rows": 15668
+        },
+        {
+          "split": "test",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_test15.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold1_test.csv",
+          "feature_rows": 2889
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "checkpoint_path": "./models/main_model/fold_02/best_model.pt",
+      "sources": [
+        {
+          "split": "calibration",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_calibration85.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold2_calibration.csv",
+          "feature_rows": 15668
+        },
+        {
+          "split": "test",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_test15.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold2_test.csv",
+          "feature_rows": 2889
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "checkpoint_path": "./models/main_model/fold_03/best_model.pt",
+      "sources": [
+        {
+          "split": "calibration",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_calibration85.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold3_calibration.csv",
+          "feature_rows": 15668
+        },
+        {
+          "split": "test",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_test15.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold3_test.csv",
+          "feature_rows": 2889
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "checkpoint_path": "./models/main_model/fold_04/best_model.pt",
+      "sources": [
+        {
+          "split": "calibration",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_calibration85.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold4_calibration.csv",
+          "feature_rows": 15668
+        },
+        {
+          "split": "test",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_test15.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold4_test.csv",
+          "feature_rows": 2889
+        }
+      ]
+    },
+    {
+      "fold": 5,
+      "checkpoint_path": "./models/main_model/fold_05/best_model.pt",
+      "sources": [
+        {
+          "split": "calibration",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_calibration85.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold5_calibration.csv",
+          "feature_rows": 15668
+        },
+        {
+          "split": "test",
+          "source_csv": "./results/intermediate/AE_PRE_MERGED_test15.csv",
+          "feature_rows_csv": "./results/intermediate/offline_feature_rows_ae_pre_fold5_test.csv",
+          "feature_rows": 2889
+        }
+      ]
+    }
+  ],
+  "calibration_feature_rows": 78340,
+  "test_feature_rows": 14445,
+  "test_label_rows": 2889,
+  "final_reliability_feature_columns": [
+    "solute_max_tanimoto",
+    "solute_scaffold_novel",
+    "solute_scaffold_similarity",
+    "base_prediction",
+    "solute_scaffold_in_train_and_val",
+    "solute_scaffold_train_and_val_count",
+    "solute_scaffold_train_and_val_count_log1p",
+    "solute_scaffold_train_and_val_count_sqrt",
+    "solute_scaffold_rare_in_train_and_val",
+    "solute_scaffold_common_in_train_and_val",
+    "calibration_same_scaffold_count",
+    "calibration_same_scaffold_mean_abs_error",
+    "base_prediction_fold_std",
+    "base_prediction_fold_range",
+    "calibration_same_scaffold_median_abs_error",
+    "calibration_same_scaffold_max_abs_error",
+    "calibration_same_scaffold_std_abs_error",
+    "calibration_same_scaffold_solvent_count",
+    "calibration_same_scaffold_solvent_mean_abs_error",
+    "solute_top3_mean_tanimoto",
+    "solute_top5_mean_tanimoto",
+    "solute_neighbor_count_ge_0_5",
+    "solute_neighbor_count_ge_0_7",
+    "solute_neighbor_count_ge_0_8",
+    "solute_top1_top2_tanimoto_gap",
+    "solute_same_scaffold_neighbor_count_ge_0_5",
+    "solute_other_scaffold_neighbor_count_ge_0_5"
+  ],
+  "feature_reference_scope": {
+    "tanimoto_and_scaffold_counts": "TrainAndVal.csv only",
+    "historical_residual_statistics": "calibration split only",
+    "calibration_training_rows": "leave-one-row_index-out",
+    "test_labels_loaded_during_fitted_feature_engineering": false,
+    "test_label_columns_in_test_features_csv": []
+  }
+}

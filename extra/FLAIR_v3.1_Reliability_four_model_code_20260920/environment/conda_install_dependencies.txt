@@ -1,0 +1,22 @@
+conda create -n Pytorch python=3.10 -y
+conda activate Pytorch
+
+conda install -c conda-forge -y numpy pandas scipy 
+
+conda install -c conda-forge -y scikit-learn=1.7.2 rdkit
+
+conda install -c conda-forge -y networkx tqdm pip
+
+python -m pip install tensorboardX
+
+# Required only for the optional XGBoost Reliability HPO/model family.
+python -m pip install "xgboost==2.1.4"
+
+python -m pip install "torch==2.11.0+cu128" --index-url https://download.pytorch.org/whl/cu128
+
+python -m pip install pyg_lib torch_scatter torch_sparse -f https://data.pyg.org/whl/torch-2.11.0+cu128.html
+
+python -m pip install torch_geometric
+
+
+python -c "import numpy,pandas,scipy,sklearn,rdkit,networkx,tqdm,tensorboardX,torch,pyg_lib,torch_scatter,torch_sparse,torch_geometric; print('全部依赖已安装完成，PyTorch:', torch.__version__, 'CUDA:', torch.version.cuda)"

@@ -1,0 +1,32 @@
+{
+  "selection_rule": "highest pooled 5-fold weighted validation Spearman; ties use lower trial_id",
+  "test15_used_for_hpo_selection": false,
+  "n_random_trials": 100,
+  "random_search_seed": 20260824,
+  "model_seed_rule": "42 + cv_fold*100 + property_index",
+  "best_trial_id": 65,
+  "best_config_id": "84e366cce4faa8aa",
+  "best_params": {
+    "hidden1": 64,
+    "hidden2": 32,
+    "activation": "leaky_relu",
+    "dropout": 0.15,
+    "optimizer": "adam",
+    "learning_rate": 0.000868422081016009,
+    "weight_decay": 5.8227148141978355e-06,
+    "epochs": 500
+  },
+  "best_weighted_val_spearman": 0.6310563284911787,
+  "baseline_params": {
+    "hidden1": 128,
+    "hidden2": 64,
+    "activation": "relu",
+    "dropout": 0.0,
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "epochs": 500
+  },
+  "baseline_weighted_val_spearman": 0.6105847311962358,
+  "delta_val_spearman": 0.020471597294942856
+}

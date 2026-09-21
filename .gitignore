@@ -1,0 +1,24 @@
+# --- OS / editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- Logs / temporaries ---
+*.log
+*.tmp
+*.bak
+*~
+
+# --- Generated caches (regenerable) ---
+results/**/cv_feature_cache/
+results/**/configs/

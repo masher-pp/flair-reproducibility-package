@@ -1,0 +1,17 @@
+# Required runtime on this workstation.
+
+conda activate Pytorch
+
+/opt/anaconda3/envs/Pytorch/bin/python3.10 -c "import numpy,pandas,scipy,sklearn,rdkit,networkx,tqdm,torch,torch_geometric,torch_scatter; print('FLAIR v3 Pytorch environment ready:', torch.__version__, sklearn.__version__, pandas.__version__, numpy.__version__)"
+
+# Validated snapshot on 2026-08-27:
+# Python 3.10
+# PyTorch 2.10.0 (CPU)
+# PyTorch Geometric 2.7.0
+# torch-scatter 2.1.2
+# scikit-learn 1.7.2
+# pandas 2.3.3
+# NumPy 1.24.4
+
+# All scripts/01-04 wrappers independently verify and call this exact interpreter:
+# /opt/anaconda3/envs/Pytorch/bin/python3.10

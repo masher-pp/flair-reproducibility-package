@@ -1,0 +1,22 @@
+{
+  "trial_id": 0,
+  "config_id": "0433e9fe73be353b",
+  "hidden1": 128,
+  "hidden2": 64,
+  "activation": "relu",
+  "dropout": 0.0,
+  "optimizer": "adam",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "epochs": 500,
+  "plqy_val_spearman": 0.5986780184658091,
+  "emi_val_spearman": 0.6830085245177647,
+  "em_val_spearman": 0.44872797031091394,
+  "abs_val_spearman": 0.6803764455327923,
+  "weighted_val_spearman": 0.6105847311962358,
+  "macro_val_spearman": 0.6026977397068201,
+  "worst_property_val_spearman": 0.44872797031091394,
+  "fold_weighted_spearman_mean": 0.6110085502897741,
+  "fold_weighted_spearman_std": 0.008809951633693098,
+  "runtime_seconds": 78.42734813690186
+}

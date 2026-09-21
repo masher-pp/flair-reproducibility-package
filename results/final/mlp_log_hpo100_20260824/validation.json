@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "n_random_trials": 100,
+  "cv_method": "5-fold canonical-solute-solvent GroupKFold within Calibration85",
+  "selection_metric": "sample-count-weighted pooled out-of-fold Spearman across Abs, Emi, PLQY, and em",
+  "test15_used_for_hpo_selection": false,
+  "test_labels_loaded_after_prediction_freeze": true,
+  "n_features": 32,
+  "calibration_rows": 15668,
+  "test_rows": 2889,
+  "best_trial_id": 65,
+  "best_params": {
+    "hidden1": 64,
+    "hidden2": 32,
+    "activation": "leaky_relu",
+    "dropout": 0.15,
+    "optimizer": "adam",
+    "learning_rate": 0.000868422081016009,
+    "weight_decay": 5.8227148141978355e-06,
+    "epochs": 500
+  },
+  "baseline_weighted_cv_spearman": 0.6105847311962358,
+  "best_weighted_cv_spearman": 0.6310563284911787,
+  "weighted_test15_spearman": 0.6589980233120313,
+  "baseline_weighted_test15_spearman": 0.6455226529031972,
+  "delta_test15_spearman": 0.013475370408834064,
+  "weighted_test15_ae_mae": 10.046811636040012,
+  "baseline_weighted_test15_ae_mae": 9.886471251416207,
+  "delta_test15_ae_mae": 0.1603403846238045,
+  "checkpoint": "models/reliability_model/mlp_log_hpo100_reliability_model_bundle.pt",
+  "checkpoint_sha256": "dee75d7dd5e8fe7d2d15e22c8486367b245f5d961e661db9d1da0390cbf3c026",
+  "solvent_reference_summary": {
+    "reference_rows_with_valid_solvent": 44718,
+    "reference_unique_solvents": 60,
+    "fingerprint_radius": 2,
+    "fingerprint_n_bits": 2048,
+    "calibration_unseen_solvent_rows": 6,
+    "test_unseen_solvent_rows": 4
+  }
+}

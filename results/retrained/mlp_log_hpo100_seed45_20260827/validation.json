@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "controlled_change": "model initialization/training seed only",
+  "hpo_rerun": false,
+  "base_seed": 45,
+  "property_seeds": {
+    "plqy": 45,
+    "emi": 46,
+    "em": 47,
+    "abs": 48
+  },
+  "best_trial_id": 65,
+  "best_params": {
+    "hidden1": 64,
+    "hidden2": 32,
+    "activation": "leaky_relu",
+    "dropout": 0.15,
+    "optimizer": "adam",
+    "learning_rate": 0.000868422081016009,
+    "weight_decay": 5.8227148141978355e-06,
+    "epochs": 500
+  },
+  "test15_used_for_selection": false,
+  "test_labels_loaded_after_prediction_freeze": true,
+  "n_features": 32,
+  "calibration_rows": 15668,
+  "test_rows": 2889,
+  "weighted_test15_spearman": 0.6575869606439309,
+  "seed42_weighted_test15_spearman": 0.6589980233120313,
+  "delta_weighted_test15_spearman": -0.0014110626681004268,
+  "weighted_test15_ae_mae": 10.132258338661755,
+  "seed42_weighted_test15_ae_mae": 10.046811636040012,
+  "delta_weighted_test15_ae_mae": 0.08544670262174314,
+  "checkpoint": "models/reliability_model/retrained/mlp_log_hpo100_seed45_20260827_bundle.pt",
+  "checkpoint_sha256": "e49298ef4eacf40ba87c6db03e96999564418af697b265b89153085ee66d4454",
+  "official_checkpoint": "models/reliability_model/mlp_log_hpo100_reliability_model_bundle.pt",
+  "official_checkpoint_sha256": "dee75d7dd5e8fe7d2d15e22c8486367b245f5d961e661db9d1da0390cbf3c026",
+  "calibration_features_sha256": "249a37bbf0e2e5b4e88f48d28ade7219f543ad86b4111872d5b6231974c8386b",
+  "test_features_sha256": "9eb2cf94a3a96aa98ec8936649bf3a48850f200e755a04c6eed67a36c052b82f",
+  "test_labels_sha256": "3532103f4e169a9595039ae5c3eaeba88299a7c2c195084ebd712b4dc41c1a6d",
+  "solvent_reference_summary": {
+    "reference_rows_with_valid_solvent": 44718,
+    "reference_unique_solvents": 60,
+    "fingerprint_radius": 2,
+    "fingerprint_n_bits": 2048,
+    "calibration_unseen_solvent_rows": 6,
+    "test_unseen_solvent_rows": 4
+  }
+}

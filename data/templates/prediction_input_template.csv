@@ -1,0 +1,10 @@
+# Prediction input template.
+# Lines starting with # are comments and should be ignored by a batch-prediction reader.
+# Required columns:
+# - smiles: solute SMILES.
+# - solvent: solvent SMILES.
+# Optional columns such as sample_id are preserved in the output.
+# The script appends pred_abs, pred_emi, pred_plqy, pred_em and reliability/AE columns.
+sample_id,smiles,solvent
+example_1,CCO,O
+example_2,c1ccccc1,CCO

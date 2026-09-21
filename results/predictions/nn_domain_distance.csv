@@ -1,0 +1,3 @@
+query,max_tanimoto_to_train_solute,scaffold_is_novel,scaffold_similarity,same_scaffold_deployment_rows,same_scaffold_distinct_solutes,query_scaffold
+solute_1,0.8936,0.0,1.0,17,12,[BH2-]1n2c(-c3ccccc3)cc(-c3ccccc3)c2N=C2C(c3ccccc3)=CC(c3ccccc3)=[N+]12
+solute_2,0.8936,0.0,1.0,17,12,[BH2-]1n2c(-c3ccccc3)cc(-c3ccccc3)c2N=C2C(c3ccccc3)=CC(c3ccccc3)=[N+]12

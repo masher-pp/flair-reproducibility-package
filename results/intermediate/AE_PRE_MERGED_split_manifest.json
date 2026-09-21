@@ -1,0 +1,49 @@
+{
+  "split_provenance": "generated_from_current_sources",
+  "split_strategy": "canonical_solute_solvent_group_random",
+  "current_test_csv": "./data/splits/deployment/deployment_test.csv",
+  "ae_pre_test_csv": "./data/source/ae_pre_holdout_candidate_pool.csv",
+  "current_test_signature": {
+    "path": "./data/splits/deployment/deployment_test.csv",
+    "size": 1641300,
+    "mtime_ns": 1784226683174093604,
+    "sha256": "7601acd613f6194f47da710f7253d16900a98a759b33d932b7c87d9370e8abbd"
+  },
+  "ae_pre_test_signature": {
+    "path": "./data/source/ae_pre_holdout_candidate_pool.csv",
+    "size": 1188165,
+    "mtime_ns": 1784226683077355504,
+    "sha256": "4b1508cc148c98d170fb6cefa39811a5f48ee52d3e7951441a37cedf50661534"
+  },
+  "train_and_val_signature": {
+    "path": "./data/splits/deployment/deployment.csv",
+    "size": 12006595,
+    "mtime_ns": 1785188704544930458,
+    "sha256": "61249769bc7dc8139891b73610dcd3bf348d021934f5a2c96979d0463927df07"
+  },
+  "merged_rows": 8659,
+  "dropped_rows_without_any_target": 19,
+  "dropped_rows_overlapping_train_and_val": 399,
+  "calibration_label": "calibration85",
+  "test_label": "test15",
+  "calibration_rows": 7345,
+  "test_rows": 1314,
+  "seed": 42,
+  "test_fraction": 0.15,
+  "canonical_pair_overlap": 0,
+  "train_and_val_canonical_pair_overlap": 0,
+  "unique_canonical_pairs": 8560,
+  "actual_test_fraction": 0.1517496246679755,
+  "source_group_counts": {
+    "current_test": 4949,
+    "ae_pre_test": 3710
+  },
+  "calibration_source_group_counts": {
+    "current_test": 4203,
+    "ae_pre_test": 3142
+  },
+  "test_source_group_counts": {
+    "current_test": 746,
+    "ae_pre_test": 568
+  }
+}

@@ -1,0 +1,20 @@
+# Portable CPU environment for single-molecule inference.
+# Run one command at a time from a shell in which Conda is initialized.
+
+conda create -n FLAIR python=3.10 -y
+conda activate FLAIR
+
+conda install -c conda-forge -y numpy=1.24.4 pandas=2.3.3 scipy=1.15.2 scikit-learn=1.7.2 rdkit=2022.09.5 networkx=3.4.2 tqdm pip
+
+python -m pip install "torch==2.10.0" --index-url https://download.pytorch.org/whl/cpu
+python -m pip install "torch_geometric==2.7.0"
+python -m pip install "torch_scatter==2.1.2" -f https://data.pyg.org/whl/torch-2.10.0+cpu.html
+
+# Required only when loading or rerunning the optional XGBoost Reliability model.
+python -m pip install "xgboost==2.1.4"
+
+python -c "import numpy,pandas,scipy,sklearn,rdkit,networkx,tqdm,torch,torch_geometric,torch_scatter; print('FLAIR environment ready:', torch.__version__, sklearn.__version__)"
+
+# If no torch_scatter wheel exists for the target operating system or CPU
+# architecture, ask Codex to select the matching wheel from data.pyg.org for
+# the installed PyTorch version. Do not retrain or alter the checkpoints.

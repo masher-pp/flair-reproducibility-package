@@ -1,0 +1,7 @@
+solvent,reference_rows,n_measured_abs,n_measured_emi,n_measured_plqy,n_measured_em
+DCM,2,2,2,2,0
+EA,0,0,0,0,0
+EtOH,0,0,0,0,0
+MeOH,0,0,0,0,0
+CH3CN,1,1,1,1,1
+CHCl3,7,6,7,7,7
